@@ -6,5 +6,6 @@
 #include <stdio.h>
 
 int _printf(const char *format, ...);
+int _putchar(char a);
 
 #endif
