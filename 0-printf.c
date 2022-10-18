@@ -88,7 +88,6 @@ void check_id(const char *x, int i, va_list args)
 int _printf(const char *format, ...)
 {
 	int i;
-	char *x;
 	int k = 0;
 	int num_arg = strlen(format);
 	va_list args;
