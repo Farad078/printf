@@ -40,6 +40,29 @@ void check_sc(const char *x, int i, va_list args)
 }
 
 /**
+* check_r - check here
+* Description: check for a string or character.
+* @x: input to character
+* @i: input integer
+* Return: returns Nothing
+*/
+
+void check_r(const char *x, int i)
+{
+         int k;
+
+         if (x[i] == '%')
+	
+	{	k = i;
+		k++;
+		if (x[k] == 'r')
+		{
+			printf("%c", x[k]);
+		}
+	}
+}
+
+/**
  * check_id - check here
  * Description: check for a string or character.
  * @x: input to character
@@ -110,6 +133,7 @@ int _printf(const char *format, ...)
 		}
 		check_sc(format, i, args);
 		check_id(format, i, args);
+		check_r(format, i);
 	}
 	return (i);
 }
