@@ -112,5 +112,5 @@ int _printf(const char *format, ...)
 		check_sc(format, i, args);
 		check_id(format, i, args);
 	}
-	return (num_arg);
+	return (i);
 }
